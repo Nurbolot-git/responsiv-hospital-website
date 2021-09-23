@@ -54,3 +54,56 @@ html {
 header .navbar a:hover {
   color: var(--green);
 }
+#menu-btn {
+  font-size: 2.5rem;
+  color: var(--green);
+  border-radius: 0.5rem;
+  background: #eee;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #menu-btn {
+    display: initial;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    border: var(--border);
+    background: #fff;
+    transform: scale(0);
+    opacity: 0;
+    transition: none;
+    transform-origin: top right;
+  }
+  .header .navbar.active {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.2s ease-out;
+  }
+  .header .navbar a {
+    display: block;
+    margin: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
