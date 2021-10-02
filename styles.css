@@ -118,7 +118,7 @@ header .navbar a:hover {
   font-size: 4.5rem;
   line-height: 1.5;
   color: var(--black);
-  box-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadow);
 }
 .home .content p {
   font-size: 1.7rem;
