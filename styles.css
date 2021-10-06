@@ -309,6 +309,57 @@ header .navbar a:hover {
 .book .row form .btn {
   padding: 1rem 4rem;
 }
+.review .box-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+}
+.review .box-container .box {
+  border-radius: 0.5rem;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  padding: 2.5rem;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.review .box-container .box img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1rem solid #fff;
+}
+.review .box-container .box h3 {
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 0.5rem;
+}
+.review .box-container .box .stars i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.review .box-container .box .text {
+  line-height: 1.8;
+  font-size: 1.6re;
+  color: var(--light-color);
+  padding-top: 4rem;
+}
+.review .box-container .box::before {
+  content: " ";
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  height: 25rem;
+  width: 120%;
+  z-index: -1;
+}
 /* -------------media queries ----------- */
 @media (max-width: 991px) {
   html {
