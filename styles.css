@@ -226,7 +226,7 @@ header .navbar a:hover {
 .doctors .box-container {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 .doctors .box-container .box {
   background: #fff;
@@ -359,6 +359,64 @@ header .navbar a:hover {
   height: 25rem;
   width: 120%;
   z-index: -1;
+}
+.blogs .box-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.blogs .box-container .box {
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.blogs .box-container .box .img {
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.blogs .box-container .box .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogs .box-container .img img:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+.blogs .box-container .box .content {
+  padding-top: 1rem;
+}
+.blogs .box-container .box .content .icon {
+  padding-top: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blogs .box-container .box .content .icon a {
+  font-size: 1em 0.4rem;
+  color: var(--light-color);
+}
+.blogs .box-container .box .content .icon a:hover {
+  color: var(--green);
+}
+.blogs .box-container .box .content .icon a i {
+  padding-right: 0.5rem;
+  color: var(--green);
+}
+.blogs .box-container .box .content h3 {
+  font-size: 3rem;
+  color: var(--black);
+}
+
+.blogs .box-container .box .content p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
 }
 /* -------------media queries ----------- */
 @media (max-width: 991px) {
