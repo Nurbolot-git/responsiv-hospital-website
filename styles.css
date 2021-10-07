@@ -71,6 +71,7 @@ section:nth-child(even) {
   color: var(--green);
   background: #fff;
   margin-left: 1rem;
+  transition: 0.2s ease-in-out;
 }
 .header {
   padding: 2rem 9%;
@@ -434,7 +435,26 @@ header .navbar a:hover {
   color: var(--light-color);
   padding: 1rem 0;
 }
-
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--green);
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+  transition: 0.2s ease-in-out;
+}
+.footer .credit {
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--light-color);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+.footer .credit span {
+  color: var(--green);
+}
 /* -------------media queries ----------- */
 @media (max-width: 991px) {
   html {
